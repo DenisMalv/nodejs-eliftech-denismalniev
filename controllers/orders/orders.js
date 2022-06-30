@@ -33,8 +33,4 @@ const addOrder = async (req, res) => {
 module.exports = {
   listOrders,
   addOrder,
-  // login,
-  // logout,
-  // getCurrentUser,
-  // updateSubscription,
 };

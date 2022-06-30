@@ -21,8 +21,6 @@ router.post(
   controllerWrapper(ctrl.listOrders)
 );
 
-router.get("/", controllerWrapper(ctrl.listOrders));
-
 module.exports = router;
 
 // {"contact":{

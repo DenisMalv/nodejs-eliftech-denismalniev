@@ -23,20 +23,20 @@ function requestErrorType(controller, error) {
   let errorMessage = null;
   let errorStatus = error.status;
   switch (controller.name) {
-    case "getContactById":
-      errorMessage = "Contact not found";
+    case "getItemById":
+      errorMessage = "not found";
       errorStatus = 404;
       break;
-    case "removeContact":
-      errorMessage = "Can't delete. Contact not found";
+    case "removeItem":
+      errorMessage = "Can't delete.";
       errorStatus = 404;
       break;
-    case "updateContact":
-      errorMessage = "Can't update. Contact not found";
+    case "addItem":
+      errorMessage = "Can't add.";
       errorStatus = 404;
       break;
-    case "updateStatusContact":
-      errorMessage = "Can't update status. Contact not found";
+    case "updateItem":
+      errorMessage = "Can't update.";
       errorStatus = 404;
       break;
     default:

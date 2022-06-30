@@ -2,21 +2,6 @@ const { Products } = require("../../models/db_products");
 const { Conflict } = require("http-errors");
 
 const listItems = async (req, res) => {
-  // const { _id } = req.user;
-  // const { page, limit, favorite } = req.query;
-  // const skip = (page - 1) * limit;
-  // const options = { owner: _id, favorite: favorite };
-  // if (options.favorite === undefined) {
-  //   delete options.favorite;
-  // }
-  //  , "",
-  //     {
-  //       skip,
-  //       limit: Number(limit),
-  //       favorite: true,
-  //     };
-  // .populate("owner", "_id email");
-
   const data = await Products.find({});
   console.log("data", data);
   res.json({
